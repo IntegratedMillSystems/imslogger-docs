@@ -58,6 +58,14 @@ Please note that `pip` is not always in the `PATH` on Windows, so you have to se
 
 ```bash
 usage: gettags.py [-h] IP
+
+Get a list of tags from a PLC and return a JSON object.
+
+positional arguments:
+  IP          The IP address of the PLC
+
+optional arguments:
+  -h, --help  show this help message and exit
 ```
 **NOTE:** Outputs Raw JSON
 </div>
@@ -67,6 +75,15 @@ usage: gettags.py [-h] IP
 
 ```bash
 usage: readtag.py [-h] IP Tag
+
+Reads the value of a tag
+
+positional arguments:
+  IP          The IP address of the PLC
+  Tag         The tag to log data from
+
+optional arguments:
+  -h, --help  show this help message and exit
 ```
 **NOTE:** Outputs Raw JSON
 </div>
@@ -80,6 +97,35 @@ usage: _startlog_child.py [-h] [-r Read Interval] [-w Write Interval]
                           [-f Destination Folder] [-p File Prefix]
                           [-c Process Cache Name]
                           IP Tag
+
+Logs a tag
+
+positional arguments:
+  IP                    The IP address of the PLC
+  Tag                   The tag to log data from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r Read Interval, --read-interval Read Interval
+                        The interval between each data point in seconds (the
+                        RPI)
+  -w Write Interval, --write-interval Write Interval
+                        The interval at which the program writes and flushes
+                        to the output file in seconds
+  -s Save Interval, --save-interval Save Interval
+                        The interval at which the output file is closed and a
+                        new file is made
+  -d DateTime Format, --datetime-format DateTime Format
+                        The datetime format to use when saving timestamps to a
+                        csv file.
+  -f Destination Folder, --folder Destination Folder
+                        The destination of the output files (a new folder will
+                        be made if it does not exist)
+  -p File Prefix, --prefix File Prefix
+                        The prefix used for the output files
+  -c Process Cache Name, --cache Process Cache Name
+                        The file to which the process information will be
+                        appended (must be json)
 ```
 **NOTE:** Will log until the `CTRL-C` is pressed or the terminal closes.
 </div>
@@ -93,6 +139,35 @@ usage: startlog.py [-h] [-r Read Interval] [-w Write Interval]
                    [-f Destination Folder] [-p File Prefix]
                    [-c Process Cache Name]
                    IP Tag
+
+Starts a log process
+
+positional arguments:
+  IP                    The IP address of the PLC
+  Tag                   The tag to log data from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r Read Interval, --read-interval Read Interval
+                        The interval between each data point in seconds (the
+                        RPI)
+  -w Write Interval, --write-interval Write Interval
+                        The interval at which the program writes and flushes
+                        to the output file in seconds
+  -s Save Interval, --save-interval Save Interval
+                        The interval at which the output file is closed and a
+                        new file is made
+  -d DateTime Format, --datetime-format DateTime Format
+                        The datetime format to use when saving timestamps to a
+                        csv file.
+  -f Destination Folder, --folder Destination Folder
+                        The destination of the output files (a new folder will
+                        be made if it does not exist)
+  -p File Prefix, --prefix File Prefix
+                        The prefix used for the output files
+  -c Process Cache Name, --cache Process Cache Name
+                        The file to which the process information will be
+                        appended (must be json)
 ```
 **NOTE:** Starts logging in a different process. Can only be stopped by **imsl-stoplog** if a process cache is used.
 </div>
@@ -102,5 +177,17 @@ usage: startlog.py [-h] [-r Read Interval] [-w Write Interval]
 
 ```bash
 usage: stoplog.py [-h] -c Process_Cache_Name IP Tag
+
+Stops a log process using a process cache
+
+positional arguments:
+  IP                    The IP address of the PLC
+  Tag                   The tag to log data from
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c Process_Cache_Name, --cache Process_Cache_Name
+                        The file to which the process information will be
+                        appended (must be json)
 ```
 </div>
