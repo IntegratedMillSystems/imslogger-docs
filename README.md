@@ -2,7 +2,7 @@
 ___
 
 ## Jump to a Solution
-| [The Server](/server) | [The Command Line Utility](/cmd) | [The Python Library](/py) |
+| [The Server](server) | [The Command Line Utility](cmd) | [The Python Library](py) |
 |----|----|----|
 
 ## Introduction
