@@ -1,1 +1,0 @@
-* [IMS Logger: The Python Library](/docs/py)
