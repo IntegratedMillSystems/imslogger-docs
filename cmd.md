@@ -56,7 +56,7 @@ Please note that `pip` is not always in the `PATH` on Windows, so you have to se
 **imsl-gettags**
 <div class="indent">
 
-```bash
+```
 usage: gettags.py [-h] IP
 
 Get a list of tags from a PLC and return a JSON object.
@@ -73,7 +73,7 @@ optional arguments:
 **imsl-readtag**
 <div class="indent">
 
-```bash
+```
 usage: readtag.py [-h] IP Tag
 
 Reads the value of a tag
@@ -91,7 +91,7 @@ optional arguments:
 **imsl-startlog**
 <div class="indent">
 
-```bash
+```
 usage: _startlog_child.py [-h] [-r Read Interval] [-w Write Interval]
                           [-s Save Interval] [-d DateTime Format]
                           [-f Destination Folder] [-p File Prefix]
@@ -133,7 +133,7 @@ optional arguments:
 **imsl-startlog-thread**
 <div class="indent">
 
-```bash
+```
 usage: startlog.py [-h] [-r Read Interval] [-w Write Interval]
                    [-s Save Interval] [-d DateTime Format]
                    [-f Destination Folder] [-p File Prefix]
@@ -175,7 +175,7 @@ optional arguments:
 **imsl-stoplog**
 <div class="indent">
 
-```bash
+```
 usage: stoplog.py [-h] -c Process_Cache_Name IP Tag
 
 Stops a log process using a process cache
