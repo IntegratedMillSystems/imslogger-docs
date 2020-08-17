@@ -1,3 +1,5 @@
-.indent {
-    margin-left: 4rem;
+@media (min-width: 400px) {
+    .indent {
+        margin-left: 2rem;
+    }
 }
