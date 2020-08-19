@@ -15,7 +15,7 @@ SCRIPTS_DIR='/var/www/html'
 alias imsl-gettags='$PYTHON3 $SCRIPTS_DIR/gettags.py'
 alias imsl-readtag='$PYTHON3 $SCRIPTS_DIR/readtag.py'
 alias imsl-startlog='$PYTHON3 $SCRIPTS_DIR/_startlog_child.py'
-alias imsl-startlog-thread='$PYTHON3 $SCRIPTS_DIR/startlog.py'
+alias imsl-startlog-thread='sudo $PYTHON3 $SCRIPTS_DIR/startlog.py'
 alias imsl-stoplog='sudo $PYTHON3 $SCRIPTS_DIR/stoplog.py'
 ```
 Then, update `PYTHON3` to match the path of your python 3 binary and update `SCRIPTS_DIR` to match the path of the scripts folder that you downloaded.
@@ -49,7 +49,7 @@ You may also have to install the python library `autologging`, which can be done
 ```bash
 pip install autologging
 ```
-Please note that `pip` is not always in the `PATH` on Windows, so you have to set that before this command will work.
+Please note that `pip` is not always in the `PATH` on Windows, so you may have to add that before this command will work.
 
 ## Command Reference
 
