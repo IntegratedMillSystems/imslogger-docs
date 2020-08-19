@@ -16,7 +16,7 @@ alias imsl-gettags='$PYTHON3 $SCRIPTS_DIR/gettags.py'
 alias imsl-readtag='$PYTHON3 $SCRIPTS_DIR/readtag.py'
 alias imsl-startlog='$PYTHON3 $SCRIPTS_DIR/_startlog_child.py'
 alias imsl-startlog-thread='$PYTHON3 $SCRIPTS_DIR/startlog.py'
-alias imsl-stoplog='$PYTHON3 $SCRIPTS_DIR/stoplog.py'
+alias imsl-stoplog='sudo $PYTHON3 $SCRIPTS_DIR/stoplog.py'
 ```
 Then, update `PYTHON3` to match the path of your python 3 binary and update `SCRIPTS_DIR` to match the path of the scripts folder that you downloaded.
 
