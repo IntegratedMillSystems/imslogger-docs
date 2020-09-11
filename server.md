@@ -23,6 +23,27 @@ Now you can try connecting to your PLC! Enter the PLC's IP address into the webs
 You should probably change the default credentials before you do anything else. This can be done by editing the file */var/www/settings/settings.hjson* on the Pi, which should look something like this:
 
 ```
+{
+	folder_prefix: /share/data
+	file_prefix: datalog
+	delete_logs_after_days: 30 // Remove this line to keep files forever.
+	
+	user_auth: true
+	
+	// Set passwords using password_hash("<password>", PASSWORD_BCRYPT);
+	users: {
+		// Password: imslogger
+		admin: $2y$12$I5H1up5yt2.TZ2AXQjwyk.ar0Gw/Tkxeif6BWO4qcgPqlaqF9/AhW
+	}
+	
+	datetime_schema: %Y-%m-%d %H:%M:%S.%f
+
+	tag_settings: /var/www/settings/tag_settings.json
+
+	process_cache: /var/www/cache/process_cache.json
+        token_cache: /var/www/cache/token_cache.json
+	stderr_cache: /var/www/cache/stderr_cache.log
+}
 
 ```
 
