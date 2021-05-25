@@ -1,8 +1,8 @@
 module.exports = {
   title: 'IMS Logger Documentation',
   tagline: 'The documentation for Integrated Mill System\'s IMS Logger',
-  url: 'https://imslogger.integratedmillsystems.com',
-  baseUrl: '/',
+  url: 'https://integratedmillsystems.github.io/',
+  baseUrl: '/imslogger-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
