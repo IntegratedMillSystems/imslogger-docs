@@ -17,13 +17,23 @@ export default {
       },
       "items": [
         {
-          "to": "/docs/lib/",
-          "label": "imslogger-py",
+          "to": "/docs/",
+          "label": "Docs",
           "position": "left"
         },
         {
-          "to": "/docs/pyconpro/",
-          "label": "PyConPro",
+          "to": "/docs/data_structures/",
+          "label": "Data Structures",
+          "position": "left"
+        },
+        {
+          "to": "/docs/python/",
+          "label": "Python",
+          "position": "left"
+        },
+        {
+          "to": "/docs/web_interface/",
+          "label": "Web Interface",
           "position": "left"
         }
       ],
@@ -100,7 +110,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/sidebars.js",
-          "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/"
+          "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master"
         },
         "theme": {
           "customCss": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/src/css/custom.css"

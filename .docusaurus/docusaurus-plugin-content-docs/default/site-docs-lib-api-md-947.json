@@ -8,7 +8,7 @@
   "sourceDirName": "lib",
   "slug": "/lib/api",
   "permalink": "/docs/lib/api",
-  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/api.md",
+  "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/lib/api.md",
   "version": "current",
   "frontMatter": {
     "id": "api",

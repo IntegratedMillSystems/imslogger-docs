@@ -8,19 +8,10 @@
   "sourceDirName": "pyconpro",
   "slug": "/pyconpro/install",
   "permalink": "/docs/pyconpro/install",
-  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/install.md",
+  "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/pyconpro/install.md",
   "version": "current",
   "frontMatter": {
     "id": "install",
     "title": "Installation"
-  },
-  "sidebar": "pyconproSidebar",
-  "previous": {
-    "title": "Introduction to PyConPro",
-    "permalink": "/docs/pyconpro/"
-  },
-  "next": {
-    "title": "Library Usage",
-    "permalink": "/docs/pyconpro/usage"
   }
 }

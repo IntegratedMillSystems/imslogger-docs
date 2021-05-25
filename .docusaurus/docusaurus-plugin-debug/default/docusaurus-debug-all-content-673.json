@@ -6,291 +6,524 @@
           "versionName": "current",
           "versionLabel": "Next",
           "versionPath": "/docs",
-          "versionEditUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs",
-          "versionEditUrlLocalized": "https://github.com/imslogger/imslogger-docs/with_react/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionEditUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs",
+          "versionEditUrlLocalized": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/sidebars.js",
           "contentPath": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/docs",
           "contentPathLocalized": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/i18n/en/docusaurus-plugin-content-docs/current",
-          "mainDocId": "lib/intro",
+          "mainDocId": "readme",
           "sidebars": {
-            "libSidebar": [
+            "dataStructuresSidebar": [
+              {
+                "type": "doc",
+                "id": "data_structures/readme"
+              },
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Getting Started",
+                "label": "Logs",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "lib/intro"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "lib/install"
+                    "id": "data_structures/logs/readme"
                   }
                 ]
               },
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Usage",
+                "label": "Views",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "lib/usage"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "lib/api"
+                    "id": "data_structures/views/readme"
                   }
                 ]
               }
             ],
-            "pyconproSidebar": [
+            "pythonSidebar": [
+              {
+                "type": "doc",
+                "id": "python/readme"
+              },
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Getting Started",
+                "label": "PyConPro",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "pyconpro/intro"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "pyconpro/install"
+                    "id": "python/pyconpro/readme"
                   }
                 ]
               },
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Usage",
+                "label": "imslogger-py",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "pyconpro/usage"
+                    "id": "python/imslogger-py/readme"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Backend Server",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "python/server/readme"
+                  }
+                ]
+              }
+            ],
+            "webInterfaceSidebar": [
+              {
+                "type": "doc",
+                "id": "web_interface/readme"
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Frontend",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web_interface/frontend/readme"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "API",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "web_interface/api/readme"
+                  }
+                ]
+              }
+            ],
+            "rootSidebar": [
+              {
+                "type": "doc",
+                "id": "readme"
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Docs",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "data_structures/readme"
                   },
                   {
                     "type": "doc",
-                    "id": "pyconpro/api"
+                    "id": "python/readme"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "web_interface/readme"
                   }
                 ]
               }
             ]
           },
           "permalinkToSidebar": {
-            "/docs/lib/api": "libSidebar",
-            "/docs/lib/install": "libSidebar",
-            "/docs/lib/": "libSidebar",
-            "/docs/lib/usage": "libSidebar",
-            "/docs/pyconpro/api": "pyconproSidebar",
-            "/docs/pyconpro/install": "pyconproSidebar",
-            "/docs/pyconpro/": "pyconproSidebar",
-            "/docs/pyconpro/usage": "pyconproSidebar"
+            "/docs/data_structures/logs/readme": "dataStructuresSidebar",
+            "/docs/data_structures/": "dataStructuresSidebar",
+            "/docs/data_structures/views/readme": "dataStructuresSidebar",
+            "/docs/python/imslogger-py/readme": "pythonSidebar",
+            "/docs/python/pyconpro/": "pythonSidebar",
+            "/docs/python/": "pythonSidebar",
+            "/docs/python/server/readme": "pythonSidebar",
+            "/docs/": "rootSidebar",
+            "/docs/web_interface/api/readme": "webInterfaceSidebar",
+            "/docs/web_interface/frontend/readme": "webInterfaceSidebar",
+            "/docs/web_interface/": "webInterfaceSidebar"
           },
           "docs": [
             {
-              "unversionedId": "lib/api",
-              "id": "lib/api",
+              "unversionedId": "data_structures/logs/readme",
+              "id": "data_structures/logs/readme",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "",
+              "source": "@site/docs/data_structures/logs/readme.mdx",
+              "sourceDirName": "data_structures/logs",
+              "slug": "/data_structures/logs/readme",
+              "permalink": "/docs/data_structures/logs/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/data_structures/logs/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "title": "Introduction"
+              },
+              "sidebar": "dataStructuresSidebar",
+              "previous": {
+                "title": "Data Structures",
+                "permalink": "/docs/data_structures/"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/data_structures/views/readme"
+              }
+            },
+            {
+              "unversionedId": "data_structures/readme",
+              "id": "data_structures/readme",
+              "isDocsHomePage": false,
+              "title": "Data Structures",
+              "description": "",
+              "source": "@site/docs/data_structures/readme.mdx",
+              "sourceDirName": "data_structures",
+              "slug": "/data_structures/",
+              "permalink": "/docs/data_structures/",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/data_structures/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "slug": "./",
+                "title": "Data Structures"
+              },
+              "sidebar": "dataStructuresSidebar",
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/data_structures/logs/readme"
+              }
+            },
+            {
+              "unversionedId": "data_structures/views/readme",
+              "id": "data_structures/views/readme",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "",
+              "source": "@site/docs/data_structures/views/readme.md",
+              "sourceDirName": "data_structures/views",
+              "slug": "/data_structures/views/readme",
+              "permalink": "/docs/data_structures/views/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/data_structures/views/readme.md",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "title": "Introduction"
+              },
+              "sidebar": "dataStructuresSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/data_structures/logs/readme"
+              }
+            },
+            {
+              "unversionedId": "python/imslogger-py/api",
+              "id": "python/imslogger-py/api",
               "isDocsHomePage": false,
               "title": "API",
               "description": "See the API for the pyconpro components here.",
-              "source": "@site/docs/lib/api.md",
-              "sourceDirName": "lib",
-              "slug": "/lib/api",
-              "permalink": "/docs/lib/api",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/api.md",
+              "source": "@site/docs/python/imslogger-py/imslogger-py-api.mdx",
+              "sourceDirName": "python/imslogger-py",
+              "slug": "/python/imslogger-py/api",
+              "permalink": "/docs/python/imslogger-py/api",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/imslogger-py/imslogger-py-api.mdx",
               "version": "current",
               "frontMatter": {
                 "id": "api",
                 "title": "API"
-              },
-              "sidebar": "libSidebar",
-              "previous": {
-                "title": "Library Usage",
-                "permalink": "/docs/lib/usage"
               }
             },
             {
-              "unversionedId": "lib/install",
-              "id": "lib/install",
+              "unversionedId": "python/imslogger-py/install",
+              "id": "python/imslogger-py/install",
               "isDocsHomePage": false,
               "title": "Installation",
               "description": "",
-              "source": "@site/docs/lib/install.md",
-              "sourceDirName": "lib",
-              "slug": "/lib/install",
-              "permalink": "/docs/lib/install",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/install.md",
+              "source": "@site/docs/python/imslogger-py/install.mdx",
+              "sourceDirName": "python/imslogger-py",
+              "slug": "/python/imslogger-py/install",
+              "permalink": "/docs/python/imslogger-py/install",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/imslogger-py/install.mdx",
               "version": "current",
               "frontMatter": {
                 "id": "install",
                 "title": "Installation"
-              },
-              "sidebar": "libSidebar",
-              "previous": {
-                "title": "The IMS Logger Python Library",
-                "permalink": "/docs/lib/"
-              },
-              "next": {
-                "title": "Library Usage",
-                "permalink": "/docs/lib/usage"
               }
             },
             {
-              "unversionedId": "lib/intro",
-              "id": "lib/intro",
+              "unversionedId": "python/imslogger-py/readme",
+              "id": "python/imslogger-py/readme",
               "isDocsHomePage": false,
-              "title": "The IMS Logger Python Library",
-              "description": "The IMS Logger Python Library is the backbone of IMS Logger Service, which is included with the IMS Logger Server and the IMS Logger Command Line Client. It relies heavily on PyConPro, a python library which allows us to make multiple consumer connections at the same (developed in-house).",
-              "source": "@site/docs/lib/intro.md",
-              "sourceDirName": "lib",
-              "slug": "/lib/",
-              "permalink": "/docs/lib/",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/intro.md",
+              "title": "The logging library - imslogger-py",
+              "description": "Hey!",
+              "source": "@site/docs/python/imslogger-py/readme.mdx",
+              "sourceDirName": "python/imslogger-py",
+              "slug": "/python/imslogger-py/readme",
+              "permalink": "/docs/python/imslogger-py/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/imslogger-py/readme.mdx",
               "version": "current",
               "sidebar_label": "Introduction",
               "frontMatter": {
-                "id": "intro",
-                "slug": "./",
-                "title": "The IMS Logger Python Library",
+                "id": "readme",
+                "title": "The logging library - imslogger-py",
                 "sidebar_label": "Introduction"
               },
-              "sidebar": "libSidebar",
+              "sidebar": "pythonSidebar",
+              "previous": {
+                "title": "Introduction to PyConPro",
+                "permalink": "/docs/python/pyconpro/"
+              },
               "next": {
-                "title": "Installation",
-                "permalink": "/docs/lib/install"
+                "title": "Introduction",
+                "permalink": "/docs/python/server/readme"
               }
             },
             {
-              "unversionedId": "lib/usage",
-              "id": "lib/usage",
+              "unversionedId": "python/imslogger-py/usage",
+              "id": "python/imslogger-py/usage",
               "isDocsHomePage": false,
               "title": "Library Usage",
               "description": "Only one instance of the library can be used at a time.",
-              "source": "@site/docs/lib/usage.md",
-              "sourceDirName": "lib",
-              "slug": "/lib/usage",
-              "permalink": "/docs/lib/usage",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/usage.md",
+              "source": "@site/docs/python/imslogger-py/usage.mdx",
+              "sourceDirName": "python/imslogger-py",
+              "slug": "/python/imslogger-py/usage",
+              "permalink": "/docs/python/imslogger-py/usage",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/imslogger-py/usage.mdx",
               "version": "current",
               "sidebar_label": "Usage",
               "frontMatter": {
                 "id": "usage",
                 "title": "Library Usage",
                 "sidebar_label": "Usage"
-              },
-              "sidebar": "libSidebar",
-              "previous": {
-                "title": "Installation",
-                "permalink": "/docs/lib/install"
-              },
-              "next": {
-                "title": "API",
-                "permalink": "/docs/lib/api"
               }
             },
             {
-              "unversionedId": "pyconpro/api",
-              "id": "pyconpro/api",
+              "unversionedId": "python/pyconpro/api",
+              "id": "python/pyconpro/api",
               "isDocsHomePage": false,
               "title": "API",
               "description": "pyconpro.Connection",
-              "source": "@site/docs/pyconpro/api.md",
-              "sourceDirName": "pyconpro",
-              "slug": "/pyconpro/api",
-              "permalink": "/docs/pyconpro/api",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/api.md",
+              "source": "@site/docs/python/pyconpro/api.md",
+              "sourceDirName": "python/pyconpro",
+              "slug": "/python/pyconpro/api",
+              "permalink": "/docs/python/pyconpro/api",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/pyconpro/api.md",
               "version": "current",
               "frontMatter": {
                 "id": "api",
                 "title": "API"
-              },
-              "sidebar": "pyconproSidebar",
-              "previous": {
-                "title": "Library Usage",
-                "permalink": "/docs/pyconpro/usage"
               }
             },
             {
-              "unversionedId": "pyconpro/install",
-              "id": "pyconpro/install",
+              "unversionedId": "python/pyconpro/install",
+              "id": "python/pyconpro/install",
               "isDocsHomePage": false,
               "title": "Installation",
               "description": "",
-              "source": "@site/docs/pyconpro/install.md",
-              "sourceDirName": "pyconpro",
-              "slug": "/pyconpro/install",
-              "permalink": "/docs/pyconpro/install",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/install.md",
+              "source": "@site/docs/python/pyconpro/install.md",
+              "sourceDirName": "python/pyconpro",
+              "slug": "/python/pyconpro/install",
+              "permalink": "/docs/python/pyconpro/install",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/pyconpro/install.md",
               "version": "current",
               "frontMatter": {
                 "id": "install",
                 "title": "Installation"
-              },
-              "sidebar": "pyconproSidebar",
-              "previous": {
-                "title": "Introduction to PyConPro",
-                "permalink": "/docs/pyconpro/"
-              },
-              "next": {
-                "title": "Library Usage",
-                "permalink": "/docs/pyconpro/usage"
               }
             },
             {
-              "unversionedId": "pyconpro/intro",
-              "id": "pyconpro/intro",
+              "unversionedId": "python/pyconpro/readme",
+              "id": "python/pyconpro/readme",
               "isDocsHomePage": false,
               "title": "Introduction to PyConPro",
               "description": "The PyConPro is a python library that allows us to make multiple consumer connections with multiple PLCs. At some point, we would also like to add a feature allowing producer connections.",
-              "source": "@site/docs/pyconpro/intro.md",
-              "sourceDirName": "pyconpro",
-              "slug": "/pyconpro/",
-              "permalink": "/docs/pyconpro/",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/intro.md",
+              "source": "@site/docs/python/pyconpro/readme.md",
+              "sourceDirName": "python/pyconpro",
+              "slug": "/python/pyconpro/",
+              "permalink": "/docs/python/pyconpro/",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/pyconpro/readme.md",
               "version": "current",
               "sidebar_label": "Introduction",
               "frontMatter": {
-                "id": "intro",
+                "id": "readme",
                 "slug": "./",
                 "title": "Introduction to PyConPro",
                 "sidebar_label": "Introduction"
               },
-              "sidebar": "pyconproSidebar",
+              "sidebar": "pythonSidebar",
+              "previous": {
+                "title": "Python - Behind the Scenes",
+                "permalink": "/docs/python/"
+              },
               "next": {
-                "title": "Installation",
-                "permalink": "/docs/pyconpro/install"
+                "title": "The logging library - imslogger-py",
+                "permalink": "/docs/python/imslogger-py/readme"
               }
             },
             {
-              "unversionedId": "pyconpro/usage",
-              "id": "pyconpro/usage",
+              "unversionedId": "python/pyconpro/usage",
+              "id": "python/pyconpro/usage",
               "isDocsHomePage": false,
               "title": "Library Usage",
               "description": "Only one instance of the library can be used at a time.",
-              "source": "@site/docs/pyconpro/usage.md",
-              "sourceDirName": "pyconpro",
-              "slug": "/pyconpro/usage",
-              "permalink": "/docs/pyconpro/usage",
-              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/usage.md",
+              "source": "@site/docs/python/pyconpro/usage.md",
+              "sourceDirName": "python/pyconpro",
+              "slug": "/python/pyconpro/usage",
+              "permalink": "/docs/python/pyconpro/usage",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/pyconpro/usage.md",
               "version": "current",
               "sidebar_label": "Usage",
               "frontMatter": {
                 "id": "usage",
                 "title": "Library Usage",
                 "sidebar_label": "Usage"
+              }
+            },
+            {
+              "unversionedId": "python/readme",
+              "id": "python/readme",
+              "isDocsHomePage": false,
+              "title": "Python - Behind the Scenes",
+              "description": "The core functionality of the IMS Logger is provided by three python libraries/services.",
+              "source": "@site/docs/python/readme.md",
+              "sourceDirName": "python",
+              "slug": "/python/",
+              "permalink": "/docs/python/",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/readme.md",
+              "version": "current",
+              "sidebar_label": "Python",
+              "frontMatter": {
+                "id": "readme",
+                "slug": "./",
+                "title": "Python - Behind the Scenes",
+                "sidebar_label": "Python"
               },
-              "sidebar": "pyconproSidebar",
+              "sidebar": "pythonSidebar",
+              "next": {
+                "title": "Introduction to PyConPro",
+                "permalink": "/docs/python/pyconpro/"
+              }
+            },
+            {
+              "unversionedId": "python/server/readme",
+              "id": "python/server/readme",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "",
+              "source": "@site/docs/python/server/readme.md",
+              "sourceDirName": "python/server",
+              "slug": "/python/server/readme",
+              "permalink": "/docs/python/server/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/python/server/readme.md",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "title": "Introduction"
+              },
+              "sidebar": "pythonSidebar",
               "previous": {
-                "title": "Installation",
-                "permalink": "/docs/pyconpro/install"
+                "title": "The logging library - imslogger-py",
+                "permalink": "/docs/python/imslogger-py/readme"
+              }
+            },
+            {
+              "unversionedId": "readme",
+              "id": "readme",
+              "isDocsHomePage": false,
+              "title": "The IMS Logger",
+              "description": "Welcome to the documentation for the IMS Logger!",
+              "source": "@site/docs/readme.mdx",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs/",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "slug": "/",
+                "title": "The IMS Logger"
+              },
+              "sidebar": "rootSidebar",
+              "next": {
+                "title": "Data Structures",
+                "permalink": "/docs/data_structures/"
+              }
+            },
+            {
+              "unversionedId": "web_interface/api/readme",
+              "id": "web_interface/api/readme",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "",
+              "source": "@site/docs/web_interface/api/readme.mdx",
+              "sourceDirName": "web_interface/api",
+              "slug": "/web_interface/api/readme",
+              "permalink": "/docs/web_interface/api/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/web_interface/api/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "title": "Introduction"
+              },
+              "sidebar": "webInterfaceSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/web_interface/frontend/readme"
+              }
+            },
+            {
+              "unversionedId": "web_interface/frontend/readme",
+              "id": "web_interface/frontend/readme",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "",
+              "source": "@site/docs/web_interface/frontend/readme.mdx",
+              "sourceDirName": "web_interface/frontend",
+              "slug": "/web_interface/frontend/readme",
+              "permalink": "/docs/web_interface/frontend/readme",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/web_interface/frontend/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "title": "Introduction"
+              },
+              "sidebar": "webInterfaceSidebar",
+              "previous": {
+                "title": "The Web Interface",
+                "permalink": "/docs/web_interface/"
               },
               "next": {
-                "title": "API",
-                "permalink": "/docs/pyconpro/api"
+                "title": "Introduction",
+                "permalink": "/docs/web_interface/api/readme"
+              }
+            },
+            {
+              "unversionedId": "web_interface/readme",
+              "id": "web_interface/readme",
+              "isDocsHomePage": false,
+              "title": "The Web Interface",
+              "description": "",
+              "source": "@site/docs/web_interface/readme.mdx",
+              "sourceDirName": "web_interface",
+              "slug": "/web_interface/",
+              "permalink": "/docs/web_interface/",
+              "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/web_interface/readme.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "readme",
+                "slug": "./",
+                "title": "The Web Interface",
+                "sidebar_title": "Web Interface"
+              },
+              "sidebar": "webInterfaceSidebar",
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/web_interface/frontend/readme"
               }
             }
           ]

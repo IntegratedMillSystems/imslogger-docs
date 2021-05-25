@@ -8,15 +8,10 @@
   "sourceDirName": "pyconpro",
   "slug": "/pyconpro/api",
   "permalink": "/docs/pyconpro/api",
-  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/api.md",
+  "editUrl": "https://github.com/IntegratedMillSystems/imslogger-docs/tree/master/docs/pyconpro/api.md",
   "version": "current",
   "frontMatter": {
     "id": "api",
     "title": "API"
-  },
-  "sidebar": "pyconproSidebar",
-  "previous": {
-    "title": "Library Usage",
-    "permalink": "/docs/pyconpro/usage"
   }
 }

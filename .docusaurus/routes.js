@@ -44,47 +44,92 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','7ec'),
+  component: ComponentCreator('/docs','863'),
   
   routes: [
 {
-  path: '/docs/lib/',
-  component: ComponentCreator('/docs/lib/','dfe'),
+  path: '/docs/',
+  component: ComponentCreator('/docs/','842'),
   exact: true,
 },
 {
-  path: '/docs/lib/api',
-  component: ComponentCreator('/docs/lib/api','1e8'),
+  path: '/docs/data_structures/',
+  component: ComponentCreator('/docs/data_structures/','675'),
   exact: true,
 },
 {
-  path: '/docs/lib/install',
-  component: ComponentCreator('/docs/lib/install','02d'),
+  path: '/docs/data_structures/logs/readme',
+  component: ComponentCreator('/docs/data_structures/logs/readme','bb7'),
   exact: true,
 },
 {
-  path: '/docs/lib/usage',
-  component: ComponentCreator('/docs/lib/usage','690'),
+  path: '/docs/data_structures/views/readme',
+  component: ComponentCreator('/docs/data_structures/views/readme','7c8'),
   exact: true,
 },
 {
-  path: '/docs/pyconpro/',
-  component: ComponentCreator('/docs/pyconpro/','949'),
+  path: '/docs/python/',
+  component: ComponentCreator('/docs/python/','ee3'),
   exact: true,
 },
 {
-  path: '/docs/pyconpro/api',
-  component: ComponentCreator('/docs/pyconpro/api','e56'),
+  path: '/docs/python/imslogger-py/api',
+  component: ComponentCreator('/docs/python/imslogger-py/api','0ba'),
   exact: true,
 },
 {
-  path: '/docs/pyconpro/install',
-  component: ComponentCreator('/docs/pyconpro/install','3cb'),
+  path: '/docs/python/imslogger-py/install',
+  component: ComponentCreator('/docs/python/imslogger-py/install','6a0'),
   exact: true,
 },
 {
-  path: '/docs/pyconpro/usage',
-  component: ComponentCreator('/docs/pyconpro/usage','21a'),
+  path: '/docs/python/imslogger-py/readme',
+  component: ComponentCreator('/docs/python/imslogger-py/readme','1cf'),
+  exact: true,
+},
+{
+  path: '/docs/python/imslogger-py/usage',
+  component: ComponentCreator('/docs/python/imslogger-py/usage','aa2'),
+  exact: true,
+},
+{
+  path: '/docs/python/pyconpro/',
+  component: ComponentCreator('/docs/python/pyconpro/','941'),
+  exact: true,
+},
+{
+  path: '/docs/python/pyconpro/api',
+  component: ComponentCreator('/docs/python/pyconpro/api','574'),
+  exact: true,
+},
+{
+  path: '/docs/python/pyconpro/install',
+  component: ComponentCreator('/docs/python/pyconpro/install','9dd'),
+  exact: true,
+},
+{
+  path: '/docs/python/pyconpro/usage',
+  component: ComponentCreator('/docs/python/pyconpro/usage','9bc'),
+  exact: true,
+},
+{
+  path: '/docs/python/server/readme',
+  component: ComponentCreator('/docs/python/server/readme','e01'),
+  exact: true,
+},
+{
+  path: '/docs/web_interface/',
+  component: ComponentCreator('/docs/web_interface/','766'),
+  exact: true,
+},
+{
+  path: '/docs/web_interface/api/readme',
+  component: ComponentCreator('/docs/web_interface/api/readme','d18'),
+  exact: true,
+},
+{
+  path: '/docs/web_interface/frontend/readme',
+  component: ComponentCreator('/docs/web_interface/frontend/readme','d7c'),
   exact: true,
 },
 ]

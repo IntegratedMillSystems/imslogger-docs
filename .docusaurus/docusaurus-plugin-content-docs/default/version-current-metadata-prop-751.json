@@ -4,87 +4,152 @@
   "label": "Next",
   "isLast": true,
   "docsSidebars": {
-    "libSidebar": [
+    "dataStructuresSidebar": [
+      {
+        "type": "link",
+        "label": "Data Structures",
+        "href": "/docs/data_structures/"
+      },
       {
         "collapsed": true,
         "type": "category",
-        "label": "Getting Started",
+        "label": "Logs",
         "items": [
           {
             "type": "link",
             "label": "Introduction",
-            "href": "/docs/lib/"
-          },
-          {
-            "type": "link",
-            "label": "Installation",
-            "href": "/docs/lib/install"
+            "href": "/docs/data_structures/logs/readme"
           }
         ]
       },
       {
         "collapsed": true,
         "type": "category",
-        "label": "Usage",
+        "label": "Views",
         "items": [
           {
             "type": "link",
-            "label": "Usage",
-            "href": "/docs/lib/usage"
-          },
-          {
-            "type": "link",
-            "label": "API",
-            "href": "/docs/lib/api"
+            "label": "Introduction",
+            "href": "/docs/data_structures/views/readme"
           }
         ]
       }
     ],
-    "pyconproSidebar": [
+    "pythonSidebar": [
+      {
+        "type": "link",
+        "label": "Python",
+        "href": "/docs/python/"
+      },
       {
         "collapsed": true,
         "type": "category",
-        "label": "Getting Started",
+        "label": "PyConPro",
         "items": [
           {
             "type": "link",
             "label": "Introduction",
-            "href": "/docs/pyconpro/"
-          },
-          {
-            "type": "link",
-            "label": "Installation",
-            "href": "/docs/pyconpro/install"
+            "href": "/docs/python/pyconpro/"
           }
         ]
       },
       {
         "collapsed": true,
         "type": "category",
-        "label": "Usage",
+        "label": "imslogger-py",
         "items": [
           {
             "type": "link",
-            "label": "Usage",
-            "href": "/docs/pyconpro/usage"
+            "label": "Introduction",
+            "href": "/docs/python/imslogger-py/readme"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Backend Server",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/python/server/readme"
+          }
+        ]
+      }
+    ],
+    "webInterfaceSidebar": [
+      {
+        "type": "link",
+        "label": "The Web Interface",
+        "href": "/docs/web_interface/"
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Frontend",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/web_interface/frontend/readme"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "API",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/web_interface/api/readme"
+          }
+        ]
+      }
+    ],
+    "rootSidebar": [
+      {
+        "type": "link",
+        "label": "The IMS Logger",
+        "href": "/docs/"
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Docs",
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Structures",
+            "href": "/docs/data_structures/"
           },
           {
             "type": "link",
-            "label": "API",
-            "href": "/docs/pyconpro/api"
+            "label": "Python",
+            "href": "/docs/python/"
+          },
+          {
+            "type": "link",
+            "label": "The Web Interface",
+            "href": "/docs/web_interface/"
           }
         ]
       }
     ]
   },
   "permalinkToSidebar": {
-    "/docs/lib/api": "libSidebar",
-    "/docs/lib/install": "libSidebar",
-    "/docs/lib/": "libSidebar",
-    "/docs/lib/usage": "libSidebar",
-    "/docs/pyconpro/api": "pyconproSidebar",
-    "/docs/pyconpro/install": "pyconproSidebar",
-    "/docs/pyconpro/": "pyconproSidebar",
-    "/docs/pyconpro/usage": "pyconproSidebar"
+    "/docs/data_structures/logs/readme": "dataStructuresSidebar",
+    "/docs/data_structures/": "dataStructuresSidebar",
+    "/docs/data_structures/views/readme": "dataStructuresSidebar",
+    "/docs/python/imslogger-py/readme": "pythonSidebar",
+    "/docs/python/pyconpro/": "pythonSidebar",
+    "/docs/python/": "pythonSidebar",
+    "/docs/python/server/readme": "pythonSidebar",
+    "/docs/": "rootSidebar",
+    "/docs/web_interface/api/readme": "webInterfaceSidebar",
+    "/docs/web_interface/frontend/readme": "webInterfaceSidebar",
+    "/docs/web_interface/": "webInterfaceSidebar"
   }
 }

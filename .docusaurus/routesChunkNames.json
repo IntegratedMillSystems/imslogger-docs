@@ -25,40 +25,76 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/docs-7ec": {
+  "/docs-863": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/lib/-dfe": {
+  "/docs/-842": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-lib-1-ba-4aa"
+    "content": "content---docs-db-1-ec0"
   },
-  "/docs/lib/api-1e8": {
+  "/docs/data_structures/-675": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-lib-api-947-08e"
+    "content": "content---docs-data-structures-9-e-2-82b"
   },
-  "/docs/lib/install-02d": {
+  "/docs/data_structures/logs/readme-bb7": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-lib-installe-28-51e"
+    "content": "content---docs-data-structures-logs-readmed-7-f-220"
   },
-  "/docs/lib/usage-690": {
+  "/docs/data_structures/views/readme-7c8": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-lib-usage-7-aa-fef"
+    "content": "content---docs-data-structures-views-readmeeb-3-5a2"
   },
-  "/docs/pyconpro/-949": {
+  "/docs/python/-ee3": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-pyconpro-dc-0-e1a"
+    "content": "content---docs-python-cf-1-913"
   },
-  "/docs/pyconpro/api-e56": {
+  "/docs/python/imslogger-py/api-0ba": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-pyconpro-api-2-ac-5ad"
+    "content": "content---docs-python-imslogger-py-api-7-e-0-4c9"
   },
-  "/docs/pyconpro/install-3cb": {
+  "/docs/python/imslogger-py/install-6a0": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-pyconpro-install-2-b-8-18d"
+    "content": "content---docs-python-imslogger-py-installdc-3-790"
   },
-  "/docs/pyconpro/usage-21a": {
+  "/docs/python/imslogger-py/readme-1cf": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-pyconpro-usagefb-4-af9"
+    "content": "content---docs-python-imslogger-py-readmef-51-43d"
+  },
+  "/docs/python/imslogger-py/usage-aa2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-imslogger-py-usage-086-fe5"
+  },
+  "/docs/python/pyconpro/-941": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-pyconpro-51-e-5c1"
+  },
+  "/docs/python/pyconpro/api-574": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-pyconpro-api-68-c-73b"
+  },
+  "/docs/python/pyconpro/install-9dd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-pyconpro-install-8-ca-def"
+  },
+  "/docs/python/pyconpro/usage-9bc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-pyconpro-usageeba-16b"
+  },
+  "/docs/python/server/readme-e01": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-python-server-readme-4-f-9-6b3"
+  },
+  "/docs/web_interface/-766": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-web-interface-80-e-0cf"
+  },
+  "/docs/web_interface/api/readme-d18": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-web-interface-api-readme-6-db-b4d"
+  },
+  "/docs/web_interface/frontend/readme-d7c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-web-interface-frontend-readme-86-b-6c8"
   }
 }
