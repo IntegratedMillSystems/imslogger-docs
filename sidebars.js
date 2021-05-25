@@ -1,29 +1,23 @@
 module.exports = {
-  serverSidebar: {
+  libSidebar: {
     'Getting Started': [
-      'server/intro',
-      'server/install',
+      'lib/intro',
+      'lib/install',
     ],
-    'Advanced': [
-      'server/custom-install'
-    ]
-  },
-
-  clientSidebar: {
-    'Getting Started': [
-      'client/intro'
-    ]
-  },
-
-  apiSidebar: {
-    'Getting Started': [
-      'api/intro'
+    'Usage': [
+      'lib/usage',
+      'lib/api',
     ]
   },
 
   pyconproSidebar: {
     'Getting Started': [
-      'pyconpro/intro'
+      'pyconpro/intro',
+      'pyconpro/install',
+    ],
+    'Usage': [
+      'pyconpro/usage',
+      'pyconpro/api',
     ]
   },
 

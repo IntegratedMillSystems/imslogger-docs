@@ -27,8 +27,8 @@ module.exports = {
           position: 'left',
         },
         {
-          to: '/docs/api/',
-          label: 'Python API',
+          to: '/docs/lib/',
+          label: 'Python Library',
           position: 'left',
         },
         {
