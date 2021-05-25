@@ -1,0 +1,22 @@
+{
+  "unversionedId": "client/install",
+  "id": "client/install",
+  "isDocsHomePage": false,
+  "title": "Installation",
+  "description": "Incomplete",
+  "source": "@site/docs/client/install.md",
+  "slug": "/client/install",
+  "permalink": "/docs/client/install",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/client/install.md",
+  "version": "current",
+  "sidebar_label": "Installation",
+  "sidebar": "clientSidebar",
+  "previous": {
+    "title": "Introduction to the IMS Logger Command Line Client",
+    "permalink": "/docs/client/"
+  },
+  "next": {
+    "title": "Client Usage",
+    "permalink": "/docs/client/usage"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unversionedId": "pyconpro/install",
+  "id": "pyconpro/install",
+  "isDocsHomePage": false,
+  "title": "Installation",
+  "source": "@site/docs/pyconpro/install.md",
+  "slug": "/pyconpro/install",
+  "permalink": "/docs/pyconpro/install",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/install.md",
+  "version": "current",
+  "sidebar": "pyconproSidebar",
+  "previous": {
+    "title": "Introduction to PyConPro",
+    "permalink": "/docs/pyconpro/"
+  },
+  "next": {
+    "title": "Library Usage",
+    "permalink": "/docs/pyconpro/usage"
+  }
+}

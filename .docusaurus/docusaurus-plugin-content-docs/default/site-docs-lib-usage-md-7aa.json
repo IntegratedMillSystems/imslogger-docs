@@ -1,0 +1,22 @@
+{
+  "unversionedId": "lib/usage",
+  "id": "lib/usage",
+  "isDocsHomePage": false,
+  "title": "Library Usage",
+  "description": "Only one instance of the library can be used at a time.",
+  "source": "@site/docs/lib/usage.md",
+  "slug": "/lib/usage",
+  "permalink": "/docs/lib/usage",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/usage.md",
+  "version": "current",
+  "sidebar_label": "Usage",
+  "sidebar": "libSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/lib/install"
+  },
+  "next": {
+    "title": "API",
+    "permalink": "/docs/lib/api"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "pyconpro/usage",
+  "id": "pyconpro/usage",
+  "isDocsHomePage": false,
+  "title": "Library Usage",
+  "description": "Only one instance of the library can be used at a time.",
+  "source": "@site/docs/pyconpro/usage.md",
+  "slug": "/pyconpro/usage",
+  "permalink": "/docs/pyconpro/usage",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/usage.md",
+  "version": "current",
+  "sidebar_label": "Usage",
+  "sidebar": "pyconproSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/pyconpro/install"
+  },
+  "next": {
+    "title": "API",
+    "permalink": "/docs/pyconpro/api"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "unversionedId": "server/intro",
+  "id": "server/intro",
+  "isDocsHomePage": false,
+  "title": "Introduction to the IMS Logger Server",
+  "description": "The IMS Logger Server is a django application surrounding the IMS Logger service. It's designed to run on a Rasperry Pi with a minimal opperating system installed; however, it should also be able to work on any linux machine (within reason).",
+  "source": "@site/docs/server/intro.md",
+  "slug": "/server/",
+  "permalink": "/docs/server/",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/server/intro.md",
+  "version": "current",
+  "sidebar_label": "Introduction",
+  "sidebar": "serverSidebar",
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/server/install"
+  }
+}

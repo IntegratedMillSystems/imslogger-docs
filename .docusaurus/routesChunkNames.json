@@ -1,0 +1,64 @@
+{
+  "/-deb": {
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  },
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
+  },
+  "/docs-7ec": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/lib/-dfe": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-lib-1-ba-4aa"
+  },
+  "/docs/lib/api-1e8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-lib-api-947-08e"
+  },
+  "/docs/lib/install-02d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-lib-installe-28-51e"
+  },
+  "/docs/lib/usage-690": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-lib-usage-7-aa-fef"
+  },
+  "/docs/pyconpro/-949": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-pyconpro-dc-0-e1a"
+  },
+  "/docs/pyconpro/api-e56": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-pyconpro-api-2-ac-5ad"
+  },
+  "/docs/pyconpro/install-3cb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-pyconpro-install-2-b-8-18d"
+  },
+  "/docs/pyconpro/usage-21a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-pyconpro-usagefb-4-af9"
+  }
+}

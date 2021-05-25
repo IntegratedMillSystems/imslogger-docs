@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "lib/intro",
+          "docs": [
+            {
+              "id": "lib/api",
+              "path": "/docs/lib/api",
+              "sidebar": "libSidebar"
+            },
+            {
+              "id": "lib/install",
+              "path": "/docs/lib/install",
+              "sidebar": "libSidebar"
+            },
+            {
+              "id": "lib/intro",
+              "path": "/docs/lib/",
+              "sidebar": "libSidebar"
+            },
+            {
+              "id": "lib/usage",
+              "path": "/docs/lib/usage",
+              "sidebar": "libSidebar"
+            },
+            {
+              "id": "pyconpro/api",
+              "path": "/docs/pyconpro/api",
+              "sidebar": "pyconproSidebar"
+            },
+            {
+              "id": "pyconpro/install",
+              "path": "/docs/pyconpro/install",
+              "sidebar": "pyconproSidebar"
+            },
+            {
+              "id": "pyconpro/intro",
+              "path": "/docs/pyconpro/",
+              "sidebar": "pyconproSidebar"
+            },
+            {
+              "id": "pyconpro/usage",
+              "path": "/docs/pyconpro/usage",
+              "sidebar": "pyconproSidebar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

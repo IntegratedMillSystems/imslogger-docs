@@ -1,0 +1,90 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "isLast": true,
+  "docsSidebars": {
+    "libSidebar": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/lib/"
+          },
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/docs/lib/install"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Usage",
+        "items": [
+          {
+            "type": "link",
+            "label": "Usage",
+            "href": "/docs/lib/usage"
+          },
+          {
+            "type": "link",
+            "label": "API",
+            "href": "/docs/lib/api"
+          }
+        ]
+      }
+    ],
+    "pyconproSidebar": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/pyconpro/"
+          },
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/docs/pyconpro/install"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Usage",
+        "items": [
+          {
+            "type": "link",
+            "label": "Usage",
+            "href": "/docs/pyconpro/usage"
+          },
+          {
+            "type": "link",
+            "label": "API",
+            "href": "/docs/pyconpro/api"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/lib/api": "libSidebar",
+    "/docs/lib/install": "libSidebar",
+    "/docs/lib/": "libSidebar",
+    "/docs/lib/usage": "libSidebar",
+    "/docs/pyconpro/api": "pyconproSidebar",
+    "/docs/pyconpro/install": "pyconproSidebar",
+    "/docs/pyconpro/": "pyconproSidebar",
+    "/docs/pyconpro/usage": "pyconproSidebar"
+  }
+}

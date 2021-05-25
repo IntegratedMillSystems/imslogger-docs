@@ -1,0 +1,17 @@
+{
+  "unversionedId": "lib/api",
+  "id": "lib/api",
+  "isDocsHomePage": false,
+  "title": "API",
+  "description": "See the API for the pyconpro components here.",
+  "source": "@site/docs/lib/api.md",
+  "slug": "/lib/api",
+  "permalink": "/docs/lib/api",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/api.md",
+  "version": "current",
+  "sidebar": "libSidebar",
+  "previous": {
+    "title": "Library Usage",
+    "permalink": "/docs/lib/usage"
+  }
+}

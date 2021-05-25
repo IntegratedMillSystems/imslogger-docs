@@ -1,0 +1,13 @@
+{
+  "unversionedId": "logger/intro",
+  "id": "logger/intro",
+  "isDocsHomePage": false,
+  "title": "The IMS Logger Python API",
+  "source": "@site/docs/logger/intro.md",
+  "slug": "/logger/",
+  "permalink": "/docs/logger/",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/logger/intro.md",
+  "version": "current",
+  "sidebar_label": "Introduction",
+  "sidebar": "loggerSidebar"
+}

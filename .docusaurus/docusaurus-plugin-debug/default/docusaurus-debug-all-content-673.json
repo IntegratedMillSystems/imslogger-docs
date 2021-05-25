@@ -1,0 +1,268 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/sidebars.js",
+          "docsDirPath": "/home/jsimonrichard/Desktop/IMS/IMSLogger/imslogger-docs/docs",
+          "mainDocId": "lib/intro",
+          "sidebars": {
+            "libSidebar": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Getting Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "lib/intro"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "lib/install"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Usage",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "lib/usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "lib/api"
+                  }
+                ]
+              }
+            ],
+            "pyconproSidebar": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Getting Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "pyconpro/intro"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "pyconpro/install"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Usage",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "pyconpro/usage"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "pyconpro/api"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/lib/api": "libSidebar",
+            "/docs/lib/install": "libSidebar",
+            "/docs/lib/": "libSidebar",
+            "/docs/lib/usage": "libSidebar",
+            "/docs/pyconpro/api": "pyconproSidebar",
+            "/docs/pyconpro/install": "pyconproSidebar",
+            "/docs/pyconpro/": "pyconproSidebar",
+            "/docs/pyconpro/usage": "pyconproSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "lib/api",
+              "id": "lib/api",
+              "isDocsHomePage": false,
+              "title": "API",
+              "description": "See the API for the pyconpro components here.",
+              "source": "@site/docs/lib/api.md",
+              "slug": "/lib/api",
+              "permalink": "/docs/lib/api",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/api.md",
+              "version": "current",
+              "sidebar": "libSidebar",
+              "previous": {
+                "title": "Library Usage",
+                "permalink": "/docs/lib/usage"
+              }
+            },
+            {
+              "unversionedId": "lib/install",
+              "id": "lib/install",
+              "isDocsHomePage": false,
+              "title": "Installation",
+              "source": "@site/docs/lib/install.md",
+              "slug": "/lib/install",
+              "permalink": "/docs/lib/install",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/install.md",
+              "version": "current",
+              "sidebar": "libSidebar",
+              "previous": {
+                "title": "The IMS Logger Python Library",
+                "permalink": "/docs/lib/"
+              },
+              "next": {
+                "title": "Library Usage",
+                "permalink": "/docs/lib/usage"
+              }
+            },
+            {
+              "unversionedId": "lib/intro",
+              "id": "lib/intro",
+              "isDocsHomePage": false,
+              "title": "The IMS Logger Python Library",
+              "description": "The IMS Logger Python Library is the backbone of IMS Logger Service, which is included with the IMS Logger Server and the IMS Logger Command Line Client. It relies heavily on PyConPro, a python library which allows us to make multiple consumer connections at the same (developed in-house).",
+              "source": "@site/docs/lib/intro.md",
+              "slug": "/lib/",
+              "permalink": "/docs/lib/",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/intro.md",
+              "version": "current",
+              "sidebar_label": "Introduction",
+              "sidebar": "libSidebar",
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/lib/install"
+              }
+            },
+            {
+              "unversionedId": "lib/usage",
+              "id": "lib/usage",
+              "isDocsHomePage": false,
+              "title": "Library Usage",
+              "description": "Only one instance of the library can be used at a time.",
+              "source": "@site/docs/lib/usage.md",
+              "slug": "/lib/usage",
+              "permalink": "/docs/lib/usage",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/usage.md",
+              "version": "current",
+              "sidebar_label": "Usage",
+              "sidebar": "libSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/lib/install"
+              },
+              "next": {
+                "title": "API",
+                "permalink": "/docs/lib/api"
+              }
+            },
+            {
+              "unversionedId": "pyconpro/api",
+              "id": "pyconpro/api",
+              "isDocsHomePage": false,
+              "title": "API",
+              "description": "pyconpro.Connection",
+              "source": "@site/docs/pyconpro/api.md",
+              "slug": "/pyconpro/api",
+              "permalink": "/docs/pyconpro/api",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/api.md",
+              "version": "current",
+              "sidebar": "pyconproSidebar",
+              "previous": {
+                "title": "Library Usage",
+                "permalink": "/docs/pyconpro/usage"
+              }
+            },
+            {
+              "unversionedId": "pyconpro/install",
+              "id": "pyconpro/install",
+              "isDocsHomePage": false,
+              "title": "Installation",
+              "source": "@site/docs/pyconpro/install.md",
+              "slug": "/pyconpro/install",
+              "permalink": "/docs/pyconpro/install",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/install.md",
+              "version": "current",
+              "sidebar": "pyconproSidebar",
+              "previous": {
+                "title": "Introduction to PyConPro",
+                "permalink": "/docs/pyconpro/"
+              },
+              "next": {
+                "title": "Library Usage",
+                "permalink": "/docs/pyconpro/usage"
+              }
+            },
+            {
+              "unversionedId": "pyconpro/intro",
+              "id": "pyconpro/intro",
+              "isDocsHomePage": false,
+              "title": "Introduction to PyConPro",
+              "description": "The PyConPro is a python library that allows us to make multiple consumer connections with multiple PLCs. At some point, we would also like to add a feature allowing producer connections.",
+              "source": "@site/docs/pyconpro/intro.md",
+              "slug": "/pyconpro/",
+              "permalink": "/docs/pyconpro/",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/intro.md",
+              "version": "current",
+              "sidebar_label": "Introduction",
+              "sidebar": "pyconproSidebar",
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/pyconpro/install"
+              }
+            },
+            {
+              "unversionedId": "pyconpro/usage",
+              "id": "pyconpro/usage",
+              "isDocsHomePage": false,
+              "title": "Library Usage",
+              "description": "Only one instance of the library can be used at a time.",
+              "source": "@site/docs/pyconpro/usage.md",
+              "slug": "/pyconpro/usage",
+              "permalink": "/docs/pyconpro/usage",
+              "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/usage.md",
+              "version": "current",
+              "sidebar_label": "Usage",
+              "sidebar": "pyconproSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/pyconpro/install"
+              },
+              "next": {
+                "title": "API",
+                "permalink": "/docs/pyconpro/api"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": null
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

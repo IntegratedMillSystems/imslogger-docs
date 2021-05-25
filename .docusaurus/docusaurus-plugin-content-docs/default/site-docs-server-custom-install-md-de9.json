@@ -1,0 +1,17 @@
+{
+  "unversionedId": "server/custom-install",
+  "id": "server/custom-install",
+  "isDocsHomePage": false,
+  "title": "Custom Installation",
+  "description": "If you'd like to install the IMS Logger Server on a machine other that a Raspberry Pi, or you'd like to have more control during the installation, this is the page for you.",
+  "source": "@site/docs/server/custom-install.md",
+  "slug": "/server/custom-install",
+  "permalink": "/docs/server/custom-install",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/server/custom-install.md",
+  "version": "current",
+  "sidebar": "serverSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/server/install"
+  }
+}

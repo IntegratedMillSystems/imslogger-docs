@@ -1,0 +1,20 @@
+{
+  "unversionedId": "lib/install",
+  "id": "lib/install",
+  "isDocsHomePage": false,
+  "title": "Installation",
+  "source": "@site/docs/lib/install.md",
+  "slug": "/lib/install",
+  "permalink": "/docs/lib/install",
+  "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/install.md",
+  "version": "current",
+  "sidebar": "libSidebar",
+  "previous": {
+    "title": "The IMS Logger Python Library",
+    "permalink": "/docs/lib/"
+  },
+  "next": {
+    "title": "Library Usage",
+    "permalink": "/docs/lib/usage"
+  }
+}
