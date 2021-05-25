@@ -45,13 +45,21 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Docs',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Data Structures',
+              to: 'docs/data_structures/',
             },
+            {
+              label: 'Python',
+              to: 'docs/python/',
+            },
+            {
+              label: 'Web Interface',
+              to: 'docs/web_interface/',
+            }
           ],
         },
         {
