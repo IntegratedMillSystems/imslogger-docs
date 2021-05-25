@@ -1,0 +1,90 @@
+---
+id: logs
+title: Logs
+---
+
+Logs are stored in the `logs` collection, and are structured as follows.
+
+```json
+{
+  _id: <ObjectId>,
+  
+  plc: <string>,
+  tag: <string>,
+  
+  start: <Date>,
+  stop: <Date>,
+
+  columns: [
+    { // One DateTime column, always at the beginning
+      type: "DateTime",
+      name: "DateTime",
+    },
+    { // Then the rest of the columns
+      type: "BOOL" or "REAL," etc.
+      name: <string>
+    },
+    ...
+  ],
+  entries: [
+    {DateTime: <Date>, <col_name>: <col_value>, ...},
+    ...
+  ]
+}
+```
+
+## _id
+
+The `_id` field is a BSON ObjectId.
+
+## plc
+
+The `plc` field is a string set to the address of the plc the log was taken from.
+It must follow the format of a valid IPv4 or IPv6 address followed
+by a forward slash and its slot number.
+
+E.g. `192.168.1.2/0`
+
+This slot number is manditory. If the user does not provide one, the frontend
+must append a `/0` to the address for passing to the API.
+
+## tag
+The `tag` field is stores the name of the tag the data was logged from.
+
+## start
+The DateTime recorded at the beginning of the log.
+
+## stop
+The DateTime recorded after the log is stopped (gracefully).
+
+## columns
+The `columns` field is an array representing the variables and variable types
+provided by the tag being logged.
+
+Each item of this array must have a `name` field and a `type` field. Currently,
+the following types are supported.
+
+:::caution
+Not all of these `type` fields have been tested yet.
+:::
+
+| `type` | C Type | Size | Plot Type (on the frontend) |
+|--------------|------|------|------------------------|
+| BOOL | bool | 1 bit | Bool Plot |
+| DINT | long int |4 bytes | Float Plot |
+| INT  | int | 2 bytes | Float Plot |
+| LINT | long long int | 8 bytes | Float Plot |
+| LREAL | double | 8 bytes | Float Plot |
+| REAL | float | 4 bytes | Float Plot |
+| SINT | short int| 2 bytes | Float Plot |
+| UDINT | unsigned long int | 4 bytes | Float Plot |
+| UINT | unsigned int | 4 bytes | Float Plot |
+| ULINT | unsigned long long int | 8 bytes | Float Plot |
+| USINT | unsigned short int | 2 bytes | Float Plot |
+
+## entries
+The `entries` field is the body of the log. It's an array of the data taken from
+the PLC.
+
+The fields of each item in this array must match to the `name` fields of
+the columns.

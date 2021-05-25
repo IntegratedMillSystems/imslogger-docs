@@ -1,18 +1,13 @@
 module.exports = {
   dataStructuresSidebar: [
     'data_structures/readme',
-    {
-      type: 'category',
-      label: 'Logs',
-      items: [
-        'data_structures/logs/readme',
-      ]
-    },
+    'data_structures/logs',
     {
       type: 'category',
       label: 'Views',
       items: [
         'data_structures/views/readme',
+        'data_structures/views/view-folders'
       ]
     },
   ],

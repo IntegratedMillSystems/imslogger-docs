@@ -1,0 +1,24 @@
+---
+id: readme
+slug: ./
+title: Views
+---
+
+Views are stored in the `views` collection (along with [folders](view-folders))
+and are structured as follows.
+
+```json
+{
+  _id: <ObjectId>,
+  parent: <ObjectId> or "root",
+
+  name: <string>,
+  type: "view" (as opposed to "folder"),
+
+  plots: [], // TBD
+  stats: [], // TBD
+
+  created_at: <Date>,
+  updated_at: <Date>
+}
+```

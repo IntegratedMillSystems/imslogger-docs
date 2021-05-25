@@ -1,0 +1,19 @@
+---
+id: view-folders
+title: View Folders
+sidebar_label: Folders
+---
+
+Folders are stored in the `views` collection and are used to help organize views.
+Parent references are used represent a file structure without impeading the
+read/write and search speed of the database.
+
+The structure of a folder is as follows.
+
+```json
+{
+  _id: <ObjectId>
+  name: <string>
+  parent: <ObjectId> or "root"
+}
+```
