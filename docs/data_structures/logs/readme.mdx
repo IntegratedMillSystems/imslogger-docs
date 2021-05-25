@@ -1,4 +1,0 @@
----
-id: readme
-title: Introduction
----
