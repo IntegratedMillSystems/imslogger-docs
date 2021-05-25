@@ -17,13 +17,23 @@ module.exports = {
       },
       items: [
         {
-          to: '/docs/lib/',
-          label: 'imslogger-py',
+          to: '/docs/',
+          label: 'Docs',
           position: 'left',
         },
         {
-          to: '/docs/pyconpro/',
-          label: 'PyConPro',
+          to: '/docs/data_structures/',
+          label: 'Data Structures',
+          position: 'left',
+        },
+        {
+          to: '/docs/python/',
+          label: 'Python',
+          position: 'left',
+        },
+        {
+          to: '/docs/web_interface/',
+          label: 'Web Interface',
           position: 'left',
         },
       ],
@@ -82,7 +92,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/imslogger/imslogger-docs/with_react/',
+            'https://github.com/IntegratedMillSystems/imslogger-docs/tree/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

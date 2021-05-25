@@ -1,5 +1,5 @@
 ---
-id: intro
+id: readme
 slug: ./
 title: Introduction to PyConPro
 sidebar_label: Introduction
