@@ -5,11 +5,18 @@
   "title": "Introduction to PyConPro",
   "description": "The PyConPro is a python library that allows us to make multiple consumer connections with multiple PLCs. At some point, we would also like to add a feature allowing producer connections.",
   "source": "@site/docs/pyconpro/intro.md",
+  "sourceDirName": "pyconpro",
   "slug": "/pyconpro/",
   "permalink": "/docs/pyconpro/",
   "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/intro.md",
   "version": "current",
   "sidebar_label": "Introduction",
+  "frontMatter": {
+    "id": "intro",
+    "slug": "./",
+    "title": "Introduction to PyConPro",
+    "sidebar_label": "Introduction"
+  },
   "sidebar": "pyconproSidebar",
   "next": {
     "title": "Installation",

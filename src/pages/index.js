@@ -9,31 +9,32 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Easy to Use',
-    imageUrl: 'img/server.svg',
+    imageUrl: 'img/webinterface.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The IMS Logger is designed to easily installable, allowing you to get started in minutes.
+        The device's modern web interface, which is served over the LAN, makes it easily accessible as well.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/client.svg',
+    title: 'Real-Time Connection',
+    imageUrl: 'img/real-time-connection.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Our device takes advantage of the EthernetIP Consumer/Producer protocol,
+        ensuring a reliable and fast connection. This allows logging speeds of up
+        to 500 times a second.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Powered by Docker',
+    imageUrl: 'img/docker.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The software behind this device runs on Docker, making it reliable and
+        versitile.
       </>
     ),
   },
@@ -59,7 +60,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">

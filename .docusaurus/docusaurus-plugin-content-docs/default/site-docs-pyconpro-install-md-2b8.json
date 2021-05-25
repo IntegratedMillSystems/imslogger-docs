@@ -3,11 +3,17 @@
   "id": "pyconpro/install",
   "isDocsHomePage": false,
   "title": "Installation",
+  "description": "",
   "source": "@site/docs/pyconpro/install.md",
+  "sourceDirName": "pyconpro",
   "slug": "/pyconpro/install",
   "permalink": "/docs/pyconpro/install",
   "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/install.md",
   "version": "current",
+  "frontMatter": {
+    "id": "install",
+    "title": "Installation"
+  },
   "sidebar": "pyconproSidebar",
   "previous": {
     "title": "Introduction to PyConPro",

@@ -1,12 +1,12 @@
 export default {
   "title": "IMS Logger Documentation",
   "tagline": "The documentation for Integrated Mill System's IMS Logger",
-  "url": "https://imslogger.github.com",
+  "url": "https://imslogger.integratedmillsystems.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "Integrated Mill Systems",
+  "organizationName": "IntegratedMillSystems",
   "projectName": "IMSLogger",
   "themeConfig": {
     "navbar": {
@@ -17,18 +17,8 @@ export default {
       },
       "items": [
         {
-          "to": "/docs/server/",
-          "label": "Server",
-          "position": "left"
-        },
-        {
-          "to": "/docs/client/",
-          "label": "Command Line Client",
-          "position": "left"
-        },
-        {
           "to": "/docs/lib/",
-          "label": "Python Library",
+          "label": "imslogger-py",
           "position": "left"
         },
         {
@@ -77,12 +67,12 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/IntegratedMillSystems"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2021 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2021 Integrated Mill Systems, Inc. Built with Docusaurus."
     },
     "colorMode": {
       "defaultMode": "light",
@@ -119,6 +109,13 @@ export default {
     ]
   ],
   "baseUrlIssueBanner": true,
+  "i18n": {
+    "defaultLocale": "en",
+    "locales": [
+      "en"
+    ],
+    "localeConfigs": {}
+  },
   "onDuplicateRoutes": "warn",
   "customFields": {},
   "plugins": [],

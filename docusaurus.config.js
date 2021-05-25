@@ -1,12 +1,12 @@
 module.exports = {
   title: 'IMS Logger Documentation',
   tagline: 'The documentation for Integrated Mill System\'s IMS Logger',
-  url: 'https://imslogger.github.com',
+  url: 'https://imslogger.integratedmillsystems.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Integrated Mill Systems', // Usually your GitHub org/user name.
+  organizationName: 'IntegratedMillSystems', // Usually your GitHub org/user name.
   projectName: 'IMSLogger', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -17,18 +17,8 @@ module.exports = {
       },
       items: [
         {
-          to: '/docs/server/',
-          label: 'Server',
-          position: 'left',
-        },
-        {
-          to: '/docs/client/',
-          label: 'Command Line Client',
-          position: 'left',
-        },
-        {
           to: '/docs/lib/',
-          label: 'Python Library',
+          label: 'imslogger-py',
           position: 'left',
         },
         {
@@ -76,12 +66,12 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/IntegratedMillSystems',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Integrated Mill Systems, Inc. Built with Docusaurus.`,
     },
   },
   presets: [

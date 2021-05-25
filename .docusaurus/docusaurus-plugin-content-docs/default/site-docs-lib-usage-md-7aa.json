@@ -5,11 +5,17 @@
   "title": "Library Usage",
   "description": "Only one instance of the library can be used at a time.",
   "source": "@site/docs/lib/usage.md",
+  "sourceDirName": "lib",
   "slug": "/lib/usage",
   "permalink": "/docs/lib/usage",
   "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/lib/usage.md",
   "version": "current",
   "sidebar_label": "Usage",
+  "frontMatter": {
+    "id": "usage",
+    "title": "Library Usage",
+    "sidebar_label": "Usage"
+  },
   "sidebar": "libSidebar",
   "previous": {
     "title": "Installation",

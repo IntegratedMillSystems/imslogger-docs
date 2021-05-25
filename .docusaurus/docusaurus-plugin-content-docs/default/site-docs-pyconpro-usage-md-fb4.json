@@ -5,11 +5,17 @@
   "title": "Library Usage",
   "description": "Only one instance of the library can be used at a time.",
   "source": "@site/docs/pyconpro/usage.md",
+  "sourceDirName": "pyconpro",
   "slug": "/pyconpro/usage",
   "permalink": "/docs/pyconpro/usage",
   "editUrl": "https://github.com/imslogger/imslogger-docs/with_react/docs/pyconpro/usage.md",
   "version": "current",
   "sidebar_label": "Usage",
+  "frontMatter": {
+    "id": "usage",
+    "title": "Library Usage",
+    "sidebar_label": "Usage"
+  },
   "sidebar": "pyconproSidebar",
   "previous": {
     "title": "Installation",
