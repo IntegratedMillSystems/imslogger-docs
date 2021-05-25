@@ -1,0 +1,36 @@
+---
+id: api
+title: API
+---
+
+See the API for the `pyconpro` components [here](/docs/pyconpro/api).
+
+## imslogger.Logger
+
+### `imslogger.Logger.__init__(plc, tag, readinterval=1, writeinterval=3, db_name="imslogger-logs")`
+
+#### Arguments
+
+`plc`: A pyconpro.PLC object
+
+`tag`: The name of a tag
+
+`readinterval`: The interval at which to read data from the tag. Default is `1`.
+
+`writeinterval`: The interval at which to write data to the database. Default is `3`.
+
+`db_name`: The name of a MongoDB database. Default is `"imslogger-logs"`.
+
+#### Returns
+
+An `imslogger.Logger` object.
+
+
+### `imslogger.Logger.Start(join=False)`
+
+#### Arguments
+
+`join`: If `true`, the function will hang until logging has stopped.
+
+
+### `imslogger.Logger.Stop()`
