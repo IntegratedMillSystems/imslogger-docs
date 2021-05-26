@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Production",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger/ && ./build"
+        },
+        {
+            "label": "Build Dev",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger_dev && ./build"
+        },
+        {
+            "label": "Up Production",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger && docker-compose up"
+        },
+        {
+            "label": "Up Dev",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger_dev && docker-compose up"
+        },
+        {
+            "label": "Down Production",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger && docker-compose down"
+        },
+        {
+            "label": "Down Dev",
+            "type": "shell",
+            "command": "cd ./compose_files/imslogger_dev && docker-compose down"
+        },
+        {
+            "label": "Build NPM Dev",
+            "type": "shell",
+            "command": "cd ./webinterface/frontend && npm run dev"
+        },
+        {
+            "label": "Build NPM Production",
+            "type": "shell",
+            "command": "cd ./webinterface/frontend && npm run build"
+        }
+    ]
+}
