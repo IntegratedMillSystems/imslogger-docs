@@ -2,6 +2,46 @@
 id: readme
 slug: /
 title: The IMS Logger
+sidebar_label: Overview
 ---
 
 Welcome to the documentation for the IMS Logger!
+
+The IMS Logger is a stand-alone device that logs and displays data from
+[Programmable Logic Controllers](https://en.wikipedia.org/wiki/Programmable_logic_controller)
+(or PLCs), devices which are commonly used to store sensor data and control
+machines on factory floors.
+
+The IMS Logger is designed to be easily installable. It runs on
+, and plug-and-play disk images
+will be provided, and for those who . It is also designed to be easily accessible.
+
+In order to recieve data quickly and reliably, it also takes advantage of the
+[EtherNet/IP Consumer/Producer protocol](https://www.odva.org/wp-content/uploads/2020/05/PUB00138R6-Tech-Series-EtherNetIP.pdf).
+This allows our device to log data at speeds of up to 1000 data points per second.
+
+## Architechure
+
+The intent of this project was to run IMS Logger on a
+[Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi). However, since it is
+built using [Docker](https://en.wikipedia.org/wiki/Docker_(software)), the
+application could theoretically run on any docker-supporting (most likely Unix) device.
+
+The production build of IMS Logger uses four docker images.
+* A standard MongoDB docker image.
+* A Nginx image for reliably serving the web interface (slightly modified)
+* A custom alpine linux image running a python server
+* A custom alpine linux image running Django
+
+The development build uses all of these except the Nginx image.
+
+### Orchestration using Docker-Compose
+
+IMS Logger starts and stops using
+[docker-compose](https://docs.docker.com/compose/), a tool which allows the
+configuration of multiple docker containers using a *docker-compose.yml* file.
+
+The configuration for the production and development builds can found in *./imslogger*
+and *./imslogger_dev* directories (respectively) of the
+[imslogger-compose](https://github.com/IntegratedMillSystems/imslogger-compose)
+repository.

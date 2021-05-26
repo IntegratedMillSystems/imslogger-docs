@@ -1,0 +1,100 @@
+---
+id: getting-started
+title: Getting Started with Development
+sidebar_label: Getting Started w/ Dev
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { DisplayFileStructure, Folder } from '../src/components/DisplayFileStructure';
+
+### Required Repositories and File Structure for Development
+
+Five repositories make up the source code of the IMS Logger.
+* [imslogger-compose](https://github.com/IntegratedMillSystems/imslogger-compose)
+* [imslogger-logger](https://github.com/IntegratedMillSystems/imslogger-logger)
+* [imslogger-py](https://github.com/IntegratedMillSystems/imslogger-py)
+* [pyconpro](https://github.com/IntegratedMillSystems/pyconpro)
+* [imslogger-webinterface](https://github.com/IntegratedMillSystems/imslogger-webinterface)
+
+The current file structure required for development is not ideal. Several repositories
+must be cloned and in some cases renamed before the software can be built.
+
+Below is the required file structure. The source repository of each folder is given
+in parentheses.
+
+<DisplayFileStructure>
+  <Folder name="Project Root">
+    <Folder name="compose_files" altName="imslogger-compose" />
+    <Folder name="logger" altName="imslogger-logger">
+      <Folder name="lib">
+        <Folder name="imslogger" altName="imslogger-logger" />
+        <Folder name="pyconpro" altName="pyconpro" />
+      </Folder>
+    </Folder>
+    <Folder name="webinterface" altName="imslogger-webinterface" />
+  </Folder>
+</DisplayFileStructure>
+
+Note that the *lib* folder has no source repository; instead it has two repositories
+nested inside of it. After cloning imslogger-logger, this lib folder must be created
+(it is in the *.gitignore* file of the repository), and then the two nested repositories must be cloned
+inside of it.
+
+## Building and Running the project
+
+Building and running the project is fairly easy, but it's easy to forget.
+
+### Building
+
+To build the project, both the frontend and the backend (the docker images) must be
+built.
+
+<Tabs
+  groupId="env"
+  defaultValue="prod"
+  values={[
+    {label: "Production", value: "prod"},
+    {label: "Development", value: "dev"}
+  ]}>
+<TabItem value="prod">
+
+**Build the Frontend:** run `npm run build` in the */webinterface/frontend* directory
+
+**Build the docker images:** run the build script (`./build`) in *./compose_files/imslogger/*
+
+</TabItem>
+<TabItem value="dev">
+
+**Build the Frontend:** run `npm run dev` in the *./webinterface/frontend* directory.
+
+**Build the docker images:** run the build script (`./build`) in *./compose_files/imslogger_dev/*
+
+</TabItem>
+</Tabs>
+
+
+### Running
+
+<Tabs
+  groupId="env"
+  defaultValue="prod"
+  values={[
+    {label: "Production", value: "prod"},
+    {label: "Development", value: "dev"}
+  ]}>
+<TabItem value="prod">
+
+Run `docker-compose up` in the *./compose_files/imslogger/* directory.
+
+</TabItem>
+<TabItem value="dev">
+
+Run `docker-compose up` in the *./compose_files/imslogger_dev/* directory.
+
+</TabItem>
+</Tabs>
+
+### VSCode Tasks
+
+Alternatively, you can use the VSCode tasks in [this](/files/tasks_json.txt) file.

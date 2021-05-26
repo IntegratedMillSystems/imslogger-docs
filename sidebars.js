@@ -1,38 +1,25 @@
 module.exports = {
-  dataStructuresSidebar: [
-    'data_structures/readme',
-    'data_structures/logs',
-    {
-      type: 'category',
-      label: 'Views',
-      items: [
-        'data_structures/views/readme',
-        'data_structures/views/view-folders'
-      ]
-    },
-  ],
-
   pythonSidebar: [
-    'python/readme',
+    'backend/readme',
     {
       type: 'category',
       label: 'PyConPro',
       items: [
-        'python/pyconpro/readme'
+        'backend/pyconpro/readme'
       ]
     },
     {
       type: 'category',
       label: 'imslogger-py',
       items: [
-        'python/imslogger-py/readme'
+        'backend/imslogger-py/readme'
       ]
     },
     {
       type: 'category',
       label: 'Backend Server',
       items: [
-        'python/server/readme'
+        'backend/server/readme'
       ]
     },
   ],
@@ -55,15 +42,30 @@ module.exports = {
     }
   ],
 
-  rootSidebar: [
-    'readme',
+  dataStructuresSidebar: [
+    'data_structures/readme',
+    'data_structures/logs',
     {
       type: 'category',
-      label: 'Docs',
+      label: 'Views',
       items: [
+        'data_structures/views/readme',
+        'data_structures/views/view-folders'
+      ]
+    },
+  ],
+
+  rootSidebar: [
+    'readme',
+    'installing',
+    'getting-started',
+    {
+      type: 'category',
+      label: 'Detailed Documentation',
+      items: [
+        'backend/readme',
+        'web_interface/readme',
         'data_structures/readme',
-        'python/readme',
-        'web_interface/readme'
       ]
     }
   ]

@@ -22,18 +22,18 @@ module.exports = {
           position: 'left',
         },
         {
-          to: '/docs/data_structures/',
-          label: 'Data Structures',
-          position: 'left',
-        },
-        {
-          to: '/docs/python/',
-          label: 'Python',
+          to: '/docs/backend/',
+          label: 'Backend',
           position: 'left',
         },
         {
           to: '/docs/web_interface/',
           label: 'Web Interface',
+          position: 'left',
+        },
+        {
+          to: '/docs/data_structures/',
+          label: 'Data Structures',
           position: 'left',
         },
       ],
@@ -53,8 +53,8 @@ module.exports = {
               to: 'docs/data_structures/',
             },
             {
-              label: 'Python',
-              to: 'docs/python/',
+              label: 'Backend',
+              to: 'docs/backend/',
             },
             {
               label: 'Web Interface',
