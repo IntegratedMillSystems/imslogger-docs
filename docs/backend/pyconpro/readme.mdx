@@ -1,0 +1,125 @@
+---
+id: readme
+slug: ./
+title: PyConPro
+sidebar_label: Overview
+---
+
+**PyConPro** is a python library that allows us to make multiple consumer connections
+with multiple PLCs. At some point we would also like to add a feature allowing
+producer connections, but we don't know when that will happen.
+
+This library has three main classes: **Connection**, **PLC**, and **Consumer**.
+Each of these are responsible for a different part of the Consumer/Producer protocol.
+
+## Usage Guide
+
+In order to start a connection with any PLC, an instance of the Connection class
+must be created and then started.
+
+```python
+con = Connection()
+con.Start()
+```
+
+Then, we can add a plc using the `addPLC` function.
+
+```python
+myPlc = con.addPLC("172.16.13.200", slot=0)
+```
+
+To start a Consumer/Producer, we first need to define the `ConsumerHint`.
+
+```python
+myHint = ConsumerHint(tag="test", datasize=6, rpi=1000, otrpi=1100)
+```
+
+* Set `tag` to the name of the tag you would like to log.
+* Set `datasize` to the bytesize of the tag.
+* Set `rpi` to your desired delay between data points (in milliseconds).
+* Set `otrpi` to a number slightly higher than you `rpi`. *(More documentation needed)*
+
+:::important
+The `datasize` field must include an extra 2 bytes for the header.
+
+I.e. if the tag has 4 bytes of data, set `datasize` to 6.
+:::
+
+
+:::tip Common Issues
+Before logging, make sure the tag is configured to accept a Consumer/Producer connection.
+:::
+
+We also need to provide our consumer a function to handle the data we recieve.
+```python
+def handler(bytedata):
+  print(bytedata)
+```
+
+Now, we initialize and start the consumer.
+
+```python
+myConsumer = myPlc.addConsumer(myHint, handler)
+myConsumer.Start()
+```
+
+You should get an output that looks something like this:
+
+```bash
+b'\x00\x00HB'
+b'\x00\x00HB'
+b'\x00\x00HB'
+b'\x00\x00HB'
+b'\x00\x00HB'
+b'\x00\x00HB'
+...
+```
+
+To stop the consumer, call `myConsumer.Stop()`.
+
+## Full Example
+
+Here's a full example showing it's possible to log more than one tag at a time.
+
+```python
+from pyconpro import Connection, ConsumerHint
+from time import sleep
+
+con = Connection()
+myplc = con.addPLC("172.16.13.200")
+
+def handler1(data):
+    print("My first consumer: ", data)
+
+def handler2(data):
+    print("My second consumer: ", data)
+
+con.Start()
+
+myhint = ConsumerHint(tag="test", datasize=6, rpi=1000, otrpi=1100)
+myconsumer = myplc.addConsumer(myhint, handler1)
+myconsumer.Start()
+
+sleep(0.3)
+
+myhint2 = ConsumerHint(tag="test2", datasize=6, rpi=1000, otrpi=1100)
+myconsumer2 = myplc.addConsumer(myhint2, handler2)
+myconsumer2.Start()
+
+con.Join()
+con.Close()
+```
+
+## The Please Reset Error
+
+If, after all consumers with a particular PLC are stopped, another consumer connection
+with that PLC is started, a `PleaseResetError` may be thrown. This could occur for
+two reasons:
+* The PLC stopped listening
+* An unhandled part of the Consumer/Producer protocol was used. This particular
+issue can happen if a consumer is started to soon after all of the other consumers
+for a particular PLC were stopped.
+
+If either of these issues are encountered, just try to start the consumer again.
+
+**Note:** this solution is abstracted away by the server.

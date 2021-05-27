@@ -1,25 +1,28 @@
 module.exports = {
-  pythonSidebar: [
+  backendSidebar: [
     'backend/readme',
     {
       type: 'category',
       label: 'PyConPro',
       items: [
-        'backend/pyconpro/readme'
+        'backend/pyconpro/readme',
+        'backend/pyconpro/api',
       ]
     },
     {
       type: 'category',
       label: 'imslogger-py',
       items: [
-        'backend/imslogger-py/readme'
+        'backend/imslogger-py/readme',
+        'backend/imslogger-py/api',
       ]
     },
     {
       type: 'category',
       label: 'Backend Server',
       items: [
-        'backend/server/readme'
+        'backend/server/readme',
+        'backend/server/api'
       ]
     },
   ],

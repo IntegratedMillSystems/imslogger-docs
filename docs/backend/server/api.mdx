@@ -1,0 +1,106 @@
+---
+id: api
+title: JSON API
+sidebar_label: API
+---
+
+The backend server communicates using stringified json. The general format for
+requests is as follows.
+
+```json
+{
+  "cmd": <command>,
+  "args": {
+    ...
+  }
+}
+```
+
+
+## Requests
+
+Below is a list of the valid requests.
+
+### Start
+
+To start a log, use to following json.
+```json
+{
+  "cmd": "start",
+  "args": {
+    "plc": <plc address>,
+    "tag": <tag name>,
+    "readinterval": <read interval>,
+    "writeinterval": <write interval>
+  }
+}
+```
+
+### Stop
+
+To stop a log, use the following.
+```json
+{
+  "cmd": "stop",
+  "args": {
+    "plc": <plc address>,
+    "tag": <tag name>
+  }
+}
+```
+
+### Status
+
+To get the plcs that the server is connected to and the tags it is logging, send
+this request.
+```json
+{
+  "cmd": "status"
+}
+```
+
+If the request is completed successfully, the response will be formated as follows.
+
+```json
+{
+  "status": 200,
+  "plcs": {
+    "172.16.13.200": "172.16.13.200/0", // Represents a pyconpro.PLC instance
+    ...
+  },
+  "logs": {
+    "172.16.13.200": {
+      "test": { // Represents an imslogger.Logger instance
+        "plc": "172.16.13.200/0",
+        "tag": "test",
+        "read": <read interval>,
+        "write": <write interval>
+      },
+      ...
+    },
+    ...
+  }
+}
+```
+
+## Responses
+
+### OK
+
+If the server successfully starts or stops a logger, you will recieve this.
+```json
+{
+  "status": 200
+}
+```
+
+### Error
+
+If any error for any request is encountered, the server will send the following.
+```json
+{
+  "status": 500,
+  "err": <error message>,
+  "traceback": <traceback>
+}
+```

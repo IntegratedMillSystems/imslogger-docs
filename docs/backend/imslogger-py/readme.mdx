@@ -1,7 +1,54 @@
 ---
 id: readme
-title: The logging library - imslogger-py
-sidebar_label: Introduction
+title: imslogger-py
+sidebar_label: Overview
 ---
 
-Hey!
+The **imslogger-py** library takes the data provided by the PyConPro library,
+parses it, and saves it to a MongoDB database. It does this using two threads; one
+to parse the data and push it to a queue and one to take the data from queue and
+write it to the database.
+
+Parsing the data is particularly complicated. Before the consumer connection is started,
+a third party library is used to get the fields and datatypes of that column. Then,
+an **address dictionary** is created for the parser instance as a reference. Once
+the consumer starts, the parser instance uses the address dictionary to parse the
+bytestring it recieves from consumer connection (through PyConPro).
+
+## Usage Guide
+
+To start a **logger**, we must first start a connection with a PLC (see the docs
+for PyConPro for more details).
+
+```python
+from pyconpro import Connection
+con = Connection()
+myPlc = con.addPLC("172.16.13.200")
+```
+
+Now we can create and start a logger.
+
+```python
+myLogger = Logger(
+  myPlc,
+  "test", # Tag name
+  readinterval=1, # Time between data points (in seconds)
+  writeinterval=5, # Time between writes to the database (in seconds)
+  db_name="my_log_db"
+)
+myLogger.Start()
+```
+
+:::warning
+Currently, `imslogger-py` is only compatiable with Mongo databases accessible through
+the network address `mongodb`. This is standard for MongoDB docker images.
+:::
+
+:::caution
+As with PyConPro, the tag you request data from must be configured to allow consumer
+connections.
+:::
+
+That's it. If all goes well, data will start populating you Mongo database. To learn
+more about the format of the log this logger produces, see the
+[Data Structures entry for logs](/docs/data_structures/logs).

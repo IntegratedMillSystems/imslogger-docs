@@ -1,0 +1,15 @@
+---
+id: readme
+title: The Server
+sidebar_label: Overview
+---
+
+The backend server of the IMS Logger uses PyConPro and imslogger-py to start and
+stop logs.
+
+It can be communicated with asychronosly using a TCP connection on the port set
+by the environment variable `IMSLOGGER_SERVICE_PORT` (the default is 56561).
+See the [API page](api) for more details.
+
+The Mongo Database that the server will log data to can be set using the environment
+variable `IMSLOGGER_DBNAME`.

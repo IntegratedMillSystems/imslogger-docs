@@ -5,4 +5,20 @@ title: The Backend
 sidebar_label: Backend
 ---
 
-The core functionality of the IMS Logger is provided by three python libraries/services.
+The backend of IMS Logger has three main components.
+
+* **PyConPro**, which communicates with PLCs using the EtherNet/IP Producer/Consumer
+protocol
+* **imslogger-py**, which parses and logs (stores) the data obtained through PyConPro
+* **The Server**, which handles logging requests and instances of the logger within imslogger-py.
+
+When the docker images are built, these three components combine into one docker
+image; PyConPro and imslogger-py are installed as python libraries, and the server
+script is set as the entry point for the image.
+
+However, their source code is stored in three separate repositories:
+[pyconpro](https://github.com/IntegratedMillSystems/pyconpro),
+[imslogger-py](https://github.com/IntegratedMillSystems/imslogger-py), and
+[imslogger-logger](https://github.com/IntegratedMillSystems/imslogger-logger)
+respectively. Because of this, and because they function separately, their documentation
+has been broken into three sections.
