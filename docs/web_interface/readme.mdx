@@ -4,3 +4,27 @@ slug: ./
 title: The Web Interface
 sidebar_label: Web Interface
 ---
+
+The web interface for the IMS Logger is build using Django. Within the Django project,
+there are several apps. Three of those are APIs.
+
+* The **LoggerAPI**, which connects the frontend with the backend server.
+* The **LogsAPI**, which provides opperations for reading logs.
+* The **ViewsAPI**, which provides opperations for reading and writing views. Views
+are custom pages that display log data, calculated columns, and statistics.
+
+The fourth app is **frontend**, which uses React to create a dynamic user
+interface.
+
+
+
+
+## Configuration
+
+To control the configuration
+of Django, use the following environment variables.
+* `DEBUG`
+* `DJANGO_ALLOWED_HOSTS`
+
+Configuration that is not dependant on the environment (production or development)
+can be done in the *./WebInterface/settings.py* file.
