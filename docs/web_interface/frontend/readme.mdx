@@ -4,4 +4,42 @@ title: The Frontend
 sidebar_label: Overview
 ---
 
-Coming soon...
+
+
+## The Panels
+
+The goal of this frontend is to allow users to start logs, stop logs, and analyse
+the data that is produced easily. To achieve this, the frontend has been separated into
+four panels: the Live View panel, the Active Processes panel, the Logs panel, and
+the Analyze panel.
+
+### The Live View Panel
+
+In the Live View panel, users can connect with PLCs, see the data their tags contain,
+and start logs.
+
+### The Active Processes Panel
+
+This panel allows users to see what loggers are currently running on the IMS Logger.
+If necessary, the loggers can also be stopped from this panel.
+
+### The Logs Panel
+
+The Logs panel allows users to view and search for logs. There are two search modes:
+one is basic and one is advanced.
+
+The **basic search mode** uses one, general search term. That term could apply to
+any of the following fields: the PLC address, the tag name, and the
+column names.
+
+The **advanced search mode** allows users to refine their search by using separate
+terms for each field. It also makes it possible to search by date or a range of dates and
+use Regex.
+
+### The Analyze Panel
+
+Using the Analyze panel, it will be possible to create custom plots and calculate
+statistics with existing logs. Custom plots are grouped in to views, which are named
+and stored in a file-like structure.
+
+## Source File Structure

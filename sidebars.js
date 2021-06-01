@@ -40,7 +40,10 @@ module.exports = {
       type: 'category',
       label: 'API',
       items: [
-        'web_interface/api/readme'
+        'web_interface/api/logger',
+        'web_interface/api/logs',
+        'web_interface/api/live',
+        'web_interface/api/views'
       ]
     }
   ],
