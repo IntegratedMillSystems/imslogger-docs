@@ -15,7 +15,16 @@ and are structured as follows.
   name: <string>,
   type: "view" (as opposed to "folder"),
 
-  plots: [], // TBD
+  plots: [
+    {
+      logs: [
+        {id: <ObjectId>, tags: [<tag id>, <tag id>, ...]},
+        ...
+      ]
+    },
+    ...
+  ],
+  
   stats: [], // TBD
 
   created_at: <Date>,
