@@ -2,9 +2,10 @@
 id: readme
 title: The Frontend
 sidebar_label: Overview
+slug: ./
 ---
 
-
+import { DisplayFileStructure, Folder, File } from '../../../src/components/DisplayFileStructure';
 
 ## The Panels
 
@@ -43,3 +44,29 @@ statistics with existing logs. Custom plots are grouped in to views, which are n
 and stored in a file-like structure.
 
 ## Source File Structure
+
+The file structure of the frontend (located in the `frontend` folder of `imslogger-webinterface`)
+is as follows.
+
+<DisplayFileStructure>
+  ...
+  <Folder name="src">
+    <Folder name="ajax" altName="ajax functions for all of the APIs"/>
+    <Folder name="components">
+      <Folder name="dialogs" />
+      <Folder name="panels" altName="contains the four panels" />
+      <Folder name="plotting" altName="everything to do with plots"/>
+      <File name="App.js" altName="entrypoint of the react app" />
+      <File name="styles.scss"/>
+    </Folder>
+    <File name="index.js" altName="calls App.js"/>
+  </Folder>
+  <Folder name="static/frontend" altName="static files and build files for the react app" />
+  <Folder name="templates/frontend">
+    <File name="index.html" altName="calls static/frontend/main.js, which is build by webpack"/>
+  </Folder>
+  ...
+  <File name="urls.py" />
+  <File name="views.py" altName="returns template/frontend/index.html" />
+  ...
+</DisplayFileStructure>

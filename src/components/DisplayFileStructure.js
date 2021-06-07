@@ -1,7 +1,13 @@
 import React from 'react';
 
 export function File(props) {
-  return <div>{props.name}</div>;
+  return (
+    <div>
+      📝 {props.name}
+    
+      {props.altName && <span className="alt-name"> ({props.altName})</span>}
+    </div>
+  );
 }
 
 export function Folder(props) {

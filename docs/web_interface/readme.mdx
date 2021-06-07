@@ -5,6 +5,8 @@ title: The Web Interface
 sidebar_label: Web Interface
 ---
 
+import { DisplayFileStructure, Folder, File } from '../../src/components/DisplayFileStructure';
+
 The web interface for the IMS Logger is build using Django. Within the Django project,
 there are five apps. Four of those are APIs.
 
@@ -17,9 +19,6 @@ are custom pages that display log data, calculated columns, and statistics.
 The fifth app is the **frontend**, which uses React to create a dynamic user
 interface.
 
-
-
-
 ## Configuration
 
 To control the configuration
@@ -29,3 +28,29 @@ of Django, use the following environment variables.
 
 Configuration that is not dependant on the environment (production or development)
 can be done in the *./WebInterface/settings.py* file.
+
+
+## Source File Structure
+
+The source code for the frontend is stored in the `imslogger-webinterface` repository
+with the following file structure.
+
+<DisplayFileStructure>
+  <Folder name="LiveAPI">
+    <File name="urls.py"/>
+    <File name="views.py" altName="logic for the API goes here"/>
+    ...
+  </Folder>
+  <Folder name="LoggerAPI">
+    ...
+  </Folder>
+  <Folder name="LogsAPI">
+    ...
+  </Folder>
+  <Folder name="ViewAPI">
+    ...
+  </Folder>
+  <Folder name="WebInterface" altName="settings for django" />
+  <Folder name="frontend" altName="the frontend react app"/>
+  <File name="Other files..."/>
+</DisplayFileStructure>
